@@ -14,7 +14,7 @@ else:
 guess = int(input("Enter your guess: "))
 counter = 1
 
-won = False  # add this before the while loop
+won = False
 
 while guess != secret_number:
     if guess_counter < 1:
@@ -31,7 +31,7 @@ while guess != secret_number:
         guess_counter -= 1
         counter += 1
 else:
-    won = True  # this only runs if the loop exited naturally (correct guess)
+    won = True
 
 if won:
     print(f"You got it! The number was {secret_number} and it took you {counter} guesses!")
